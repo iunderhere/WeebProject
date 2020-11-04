@@ -101,7 +101,7 @@ async def permitpm(event):
 
 @register(disable_edited=True, outgoing=True, disable_errors=True)
 async def auto_accept(event):
-    """ Will approve automatically if you texted them first. """
+    """Will approve automatically if you texted them first."""
     if not PM_AUTO_BAN:
         return
     self_user = await event.client.get_me()
