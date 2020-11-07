@@ -1,10 +1,10 @@
 # Using Groovy
-FROM biansepang/weebproject:groovy
+FROM kenzmobal/nutbutt:groovy
 
 # Clone repo and prepare working directory
-RUN git clone -b master https://github.com/BianSepang/WeebProject /home/weebproject/
-RUN mkdir /home/weebproject/bin/
-WORKDIR /home/weebproject/
+RUN git clone -b master https://github.com/kenzmobal/NutButt /home/nutbutt/
+RUN mkdir /home/nutbutt/bin/
+WORKDIR /home/nutbutt/
 
 # Finalization
 CMD ["python3","-m","userbot"]
